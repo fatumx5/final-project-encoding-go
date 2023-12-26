@@ -17,6 +17,7 @@ func main() {
 
 	jsonData := encoding.JSONData{FileInput: "jsonInput.json", FileOutput: "yamlOutput.yml"}
 	err := Encode(&jsonData)
+
 	if err != nil {
 		fmt.Printf("ошибка при перекодировании данных из JSON в YAML: %s", err.Error())
 	}
